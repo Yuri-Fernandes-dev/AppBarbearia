@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, TextInput } from "react-native";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import React from "react";
@@ -25,6 +25,15 @@ export default function Page() {
       <Text style={styles.hora}>Sexta, 25 de Abril</Text>
 
       </View>
+
+      <View style={styles.containerInput}>
+        <TextInput  placeholder="Faça sua busca...."  placeholderTextColor="" style={styles.pesquisaInput}/>
+        <Ionicons name="search" size={30} color="white" style={styles.btnpesquisa} />
+      </View>
+        
+      
+
+      
       
     </View>
   );
@@ -81,5 +90,35 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 10
    
+  },
+
+  pesquisaInput: {
+    backgroundColor: '#1d1d1d',
+    width: '90%',
+    borderColor: 'white',
+    height: 40,
+    borderWidth: 1,
+    borderRadius: 8,
+    marginTop: 10,
+    color: 'white',
+    paddingLeft: 10,
+
+  },
+
+  containerInput: {
+    flexDirection: 'row',
+    marginTop: 10,
+    alignItems: 'center',
+    width: '95%',
+    color: 'white',
+  },
+
+  btnpesquisa: {
+    backgroundColor: '#b31010ff',
+    alignContent: 'center',
+    padding: 5,
+    borderRadius: 8,
+    marginTop: 10,
+    marginLeft: 7
   }
 });
