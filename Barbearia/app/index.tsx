@@ -1,19 +1,20 @@
 import { StyleSheet, Text, View, Pressable } from "react-native";
-import { IoCutSharp } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import React from "react";
+
 
 export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.leftContainer}>
-          <IoCutSharp style={styles.iconbarber} />
+          <Ionicons name="cut" style={styles.iconbarber} />
           <Text style={styles.cutText1}>APPBarber</Text>
         </View>
 
         <Pressable>
-          <GiHamburgerMenu size={30} color="white" />
+          <MaterialIcons name="menu" size={30} color="white" />
         </Pressable>
       </View>
       
