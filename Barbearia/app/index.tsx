@@ -56,6 +56,10 @@ export default function Page() {
 
       </View>
 
+      {/* Cardes de Barbearias */}
+
+      <Text style={styles.textBarbearia}>Escolha sua Barbearia</Text>
+
 
 
 
@@ -184,5 +188,16 @@ const styles = StyleSheet.create({
     padding: 5
       
     
+  },
+
+
+  // seção carde das Barbearias
+
+  textBarbearia: {
+    color: 'white',
+    fontSize: 15,
+    fontWeight: 'bold',
+    marginTop: 18,
+    textAlign: 'left'
   },
 });
